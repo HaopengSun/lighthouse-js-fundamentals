@@ -55,3 +55,6 @@ var totals = bills.map(function (element) {
     return element;
 });
 console.log(totals);
+// TIP: Check out the toFixed() method for numbers to help with rounding the values to a maximum of 2 decimal places.
+// Note, that the method returns a string to maintain the "fixed" format of the number.
+// So, if you want to convert the string back to a number, you can cast it or convert it back to a number:
