@@ -10,3 +10,5 @@ words = ["cat", "in", "hat"];
 words.forEach(function(word, num, all) {
   console.log("Word " + num + " in " + all.toString() + " is " + word);
 });
+// the function does not change the array itself because
+// the argument in the function is just the copy the original array
