@@ -12,3 +12,18 @@ words.forEach(function(word, num, all) {
 });
 // the function does not change the array itself because
 // the argument in the function is just the copy the original array
+
+var test = [12, 29, 11, 3];
+
+test.forEach(function(item, index){
+    if(item%3===0){
+        // The commented statements below would not be able to change the value of item
+        // because the `item` is a COPY of actual element, while actual is test[index]
+        // item = item + 100;
+        test[index]=test[index]+100;
+        console.log("The updated element is "+item+" and actual is "+test[index]);
+    } else {
+        console.log("Element "+item+" is not divisible by 3");
+    }    
+});
+console.log(test);
